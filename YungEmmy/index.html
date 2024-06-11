@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/default.css">
+</head>
+    <title>YungEmmy</title>
+</head>
+<body>
+    <!-- navbar section  -->
+    <header class="container-fluid fixed right-0 left-0" style="z-index: 999;">
+        <nav class="p-4 container-fluid">
+            <div class="container mx-auto flex nav-brand">
+              <!-- Logo -->
+              <a href="#" class="text-white text-xl font-bold lg:mx-auto"><img src="assets/logo.png" alt=""></a>
+              <!-- Mobile Menu Button -->
+              <button class="menu-bar text-white block lg:hidden md:hidden ml-auto" onclick="menuChange(this)">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+              <!-- Navigation Links (Hidden on Mobile) -->
+              <div class="navbar-ul space-x-28 mr-auto content-center items-center">
+                <a href="htmlpages/about.html" class="text-white font-semibold	">About</a>
+                <a href="#" class="text-white font-semibold	">Music</a>
+                <a href="htmlpages/contact.html" class="text-white font-semibold	">Contact</a>
+                <a href="mailto:email@example.com" class="text-white font-semibold	lg:ml-auto ml-3 bg-black p-2 text-lg tracking-wider lg:px-10 rounded">Book Me</a>
+              </div>
+              <div class="flex items-center justify-center">
+        
+             </div>
+            </div>
+          </nav>         
+    </header>
+
+    <!-- hero section  -->
+    <div class="container-fluid hero-section h-screen flex items-center">
+      <div class="hero-content lg:pl-28 lg:p-10 p-4">
+        <h1 class="text-white font-semibold text-3xl">Welcome to Emmy Yung's Music <br class="lg:block hidden" /> World!</h1>
+        <h5 class="text-2xl font-light text-white py-8">NEW ALBUM ALL THE TIME OUT NOW</h5>
+        <div class="social-icons flex content-center items-center">
+            <a href="#">
+                <img src="assets/instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/facebook.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/spotify.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/twitter.svg" alt="">
+            </a>
+        </div>
+      </div>
+    </div>
+    <!-- hero section ending -->
+
+    <!-- about  -->
+    <div class="container mx-auto flex flex-col md:flex-row content-center items-center space-y-6 md:space-y-0 md:space-x-6 about p-2 lg:p-10 z-30 pt-0 mt-0 py-5" style="position: relative; background-color: #F4F0E7 ">
+      <div class="lg:w-2/4 lg:p-10">
+          <h2 class="text-2xl font-normal mt-10 lg:my-10" style="color: #828282;">Experience the Soulful Sounds</h2>
+          <div class="albumHandle  flex w-full flex-wrap md:flex-row py-10 content-center"> 
+            <img src="assets/spoti.png" class="w-full" alt="" />
+            <img src="assets/imusic.png" class="w-full" alt="">
+            <img src="assets/googleplay.png" class="w-full mx-auto" alt="">
+            <img src="assets/soundcloud.png" alt="">
+          </div>
+          <p class="text-lg py-5 lg:py-6 font-bold" style="color: #001627;">
+              Emmy Yung - the vibrant and dynamic Rap Artist hailing from the heart of Imo State, Nigeria, welcomes you to his musical universe. With a passion for music ignited at a tender age, Emmy Yung has blossomed into a true maestro, captivating audiences with his infectious beats, soul-stirring lyrics, and electrifying performances.
+          </p>
+      </div>
+      <div class="videoPlayer p-2 lg:p-5">
+          <img src="assets/ex.png" alt="Music Experience" class="w-full h-auto lg:pb-20">
+
+          <div class="overlay text-center py-8">
+            <h3 class="lg:text-white font-bold">WATCH MY NEW MUSIC VIDEO</h3>
+          </div>
+      </div>
+   </div>
+    <!-- about ending -->
+
+    <!-- subscribe section  -->
+    <div class="subscribe flex justify-center items-center w-full relative" style="height: 80vh; background: linear-gradient(rgba(3, 17, 27, 0.7),rgba(3, 17, 27, 0.7)), url('assets/subscribe.png'); background-position: center; background-size: cover;">
+      <div class="overlayContent absolute top-1 flex justify-around p-2 w-full"   style="background-color: #F4F0E7;">
+          <div class="font-bold">ALBUM</div>
+          <div class="font-bold">VIDEO</div>
+      </div>
+      <div class="text-center">
+          <h2 class="lg:text-4xl text-2xl font-bold text-white mb-4">DON'T MISS OUT</h2>
+          <h5 class="text-2xl text-center font-normal text-white py-2">GET THE LATEST MUSIC AND VIDEO</h5>
+          <form class="container text-center p-4">
+              <div class="control text-center">
+                  <label for="name" class="block text-white text-center pt-6">NAME</label>
+                  <input type="text" class="w-full bg-transparent border-b-2 border-white outline-none text-white" id="name">
+              </div>
+              <div class="control text-center mb-10">
+                  <label for="email" class="block text-white text-center pt-6">EMAIL</label>
+                  <input type="email" class="w-full bg-transparent border-b-2 border-white outline-none text-white" id="email">
+              </div>
+              <button class="p-2 text-white w-2/4 text-xl font-normal" style="background: #032741;">SUBSCRIBE</button>
+          </form>
+      </div>
+  </div>
+    <!-- subscribe section ending -->
+
+    <!-- dive into the melodies section  -->
+    <div class="container-fluid flex justify-center p-8 lg:p-28 items-center flex-col" style="height: auto;background-color: hsl(42, 37%, 93%) ">
+      <h2 class="text-3xl font-bold lg:pb-10">Dive Into the Melodies</h2>
+      <p class=" font-bold my-4" style="color: #1F1E1E">
+        Immerse yourself in the rhythmic symphony of Emmy Yung's music right here on our website. Stream his latest tracks seamlessly on Boomplay and Audiomack, or discover his diverse range of music audio and video products available for purchase. Whether you're a long-time fan or a newcomer to his beats, prepare to be enchanted by Emmy Yung's lyrical prowess and magnetic charm.
+      </p>
+    </div>
+    <!-- dive into the melodies section ending -->
+
+
+    <!-- footer section  -->
+    <div class="footer w-full p-5 lg:p-28 text-white" style="background: #09171D; height: auto;">
+      <div class="container">
+        <div class="get-in-touch">
+          <h2 class="font-bold text-3xl" style="color:#D2C9C9">Get In Touch</h2>
+          <p class="text-white font-normal py-6" style="font-size: 20px;">
+            Contact us to find out how we can help you. If it’s easier you can email <br>
+us at hello@michealjackson.com
+          </p>
+        </div>
+        <div class="policy-section lg:flex items-center lg:justify-between lg:flex-row flex-col">
+          <div>
+            <p class="font-regular py-4" style="font-size: 18px;">@ 2024  YSL Etertainment. <br> ALL Right Reserved.</p>
+          <a href="#">Privacy Policy  |</a>
+          <a href="#">Terms of Service</a>
+          </div>
+          <div class="social-icons flex content-center items-center my-6">
+            <a href="#">
+                <img src="assets/instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/facebook.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/spotify.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/twitter.svg" alt="">
+            </a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ending -->
+
+    <script>
+ document.querySelector('.menu-bar').addEventListener('click', () => {
+    let nav = document.querySelector('.navbar-ul');
+    nav.classList.toggle('navbar');
+    })
+    menuChange = (icon) => icon.classList.toggle('fa-times');
+    </script>
+</body>
+</html>
